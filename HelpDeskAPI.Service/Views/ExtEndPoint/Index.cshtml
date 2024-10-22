@@ -1,0 +1,24 @@
+﻿@model string
+
+@{
+    Layout = null;
+}
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<form id="redirectForm" action="https://demo.ecounselling.nic.in/seatallotment/authserver/Api/Authorize" method="post">
+@*    <input type="hidden" name="data" value="@Model" />*@
+    <input type="hidden" name="response_type" value="token" />
+    <input type="hidden" name="client_Id" value="100006U64YCUB09570A6" />
+    <input type="hidden" name="redirect_uri" value="http://localhost:5197/ExtEndPoint" />
+    <input type="hidden" name="scope" value="Profile" />
+    <input type="hidden" name="state" value="12132132131" />
+   
+
+</form>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#redirectForm').submit();
+    });
+</script>

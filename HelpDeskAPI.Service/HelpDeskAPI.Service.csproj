@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.20" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Serilog" Version="3.0.1" />
+    <PackageReference Include="Serilog.AspNetCore" Version="7.0.0" />
+    <PackageReference Include="Serilog.Sinks.MSSqlServer" Version="6.3.0" />
+    <PackageReference Include="SixLaborsCaptcha.Mvc.Core" Version="0.2.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HelpDeskAPI.Data.Abstraction\HelpDeskAPI.Data.Abstractions.csproj" />
+    <ProjectReference Include="..\HelpDeskAPI.Data.Business\HelpDeskAPI.Data.Business.csproj" />
+    <ProjectReference Include="..\HelpDeskAPI.Data\HelpDeskAPI.Data.csproj" />
+    <ProjectReference Include="..\HelpDeskAPI.EF\HelpDeskAPI.Data.EF.csproj" />
+  </ItemGroup>
+
+</Project>
